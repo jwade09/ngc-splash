@@ -17,6 +17,7 @@
     }
     & h3{
         @apply hover:text-blue;
+        font-family: Kumbh Sans, sans;
     }
     & button{
         @apply w-full flex gap-2;
