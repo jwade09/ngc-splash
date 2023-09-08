@@ -44,7 +44,9 @@ const IndexPage = () => {
           <p><strong>Starting Jan. 1, 2024,</strong> Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Navigation services will differ based on your medical plan. </p>
           </div>
         </div>
-        <StaticImage className="w-full md:absolute top-0 h-full" src="../images/22-2001-Stephanie-Vost-Hero.jpg" />
+        <div className="relative md:absolute top-0">
+          <StaticImage className="w-full h-full" src="../images/22-2001-Stephanie-Vost-Hero.jpg" />
+        </div>
       </section>
       <section className="gutter">
         <div className="wrapper">
