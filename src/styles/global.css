@@ -21,6 +21,7 @@
     }
     & button{
         @apply w-full flex gap-2;
+        font-family: Kumbh Sans, sans;
         &:after{
             @apply text-lg text-grey-md;
             content: '\f078';
