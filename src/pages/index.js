@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 
 
+
 const IndexPage = () => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,6 @@ const IndexPage = () => {
       setIsOpen2(false);
   };
 
-
   return (
     <main>
       <header className="bg-black">
@@ -35,18 +35,18 @@ const IndexPage = () => {
         <div className="w-32 md:w-48"><StaticImage className="w-full" src="../images/qh.svg" alt="Quantum Health" /></div>
         </div>
       </header>
-      <section className="relative overflow-hidden bg-gray-800 md:bg-transparent">
+      <section className="relative overflow-hidden bg-gray-800 md:bg-transparent hero-bg">
         <div className="wrapper">
-          <div className="gutter w-full md:w-2/4 text-white relative z-10">
+          <div className="gutter w-full md:w-3/4 lg:w-2/4 text-white relative z-10">
           <h1>Your simplified, personalized healthcare experience.</h1>
           <p>Northrop Grumman is adding a new healthcare navigation and care coordination service, powered by Quantum Health, to your 2024 benefits package. This service will be available at no additional cost and will help you and your family confidently navigate your health benefits, as well as the cost and complexity of healthcare.</p>
-          <hr className="my-8 block opacity-25" />
+          <hr className="mb-8 opacity-25" />
           <p><strong>Starting Jan. 1, 2024,</strong> Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Navigation services will differ based on your medical plan. </p>
+          
           </div>
         </div>
-        <div className="relative md:absolute top-0">
-          <StaticImage className="w-full h-full" src="../images/22-2001-Stephanie-Vost-Hero.jpg" />
-        </div>
+        {/* <div className="relative md:absolute top-0 hero-bg">
+        </div> */}
       </section>
       <section className="gutter">
         <div className="wrapper">
@@ -54,7 +54,7 @@ const IndexPage = () => {
           <div className="w-full md:w-2/4 relative">
             <div className="relative">
               <div className="play" onClick={toggleOpen}><i className="fa-regular fa-circle-play" /></div>
-              <StaticImage className="shadow-2xl border-2 border-blue rounded" src="../images/video1.jpg" />
+              <StaticImage className="shadow-2xl rounded" src="../images/video1.jpg" />
               {isOpen ? <div className="modal-overlay items-center justify-center" onClick={toggleClose}>
                 <div className="modal video-m">
                     <div className="close"><i class="fa-solid fa-xmark" /></div>
@@ -67,7 +67,7 @@ const IndexPage = () => {
           <div className="w-full md:w-2/4 relative">
             <div className="relative">
               <div className="play" onClick={toggleOpen2}><i className="fa-regular fa-circle-play" /></div>
-              <StaticImage className="shadow-2xl border-2 border-blue rounded" src="../images/video2.jpg" />
+              <StaticImage className="shadow-2xl rounded" src="../images/video2.jpg" />
               {isOpen2 ? <div className="modal-overlay items-center justify-center" onClick={toggleClose2}>
                 <div className="modal video-m">
                     <div className="close"><i class="fa-solid fa-xmark" /></div>
@@ -82,13 +82,13 @@ const IndexPage = () => {
         </div>
       </section>
       <section className="gutter sm top">
-        <div className="wrapper flex flex-col md:flex-row gap-12 md:gap-24">
+        <div className="wrapper flex flex-col md:flex-row gap-4 md:gap-24">
           <div className="w-full md:w-2/4">
             <h2>Quantum Health is your dedicated team of benefits experts. </h2>
             <p>Healthcare can be complex and confusing. With Quantum Health, you’ll have access to Care Coordinators – a team of nurses, claims specialists and benefits experts – who exclusively support Northrop Grumman employees and their families. Care Coordinators are trained on Northrop Grumman’s company culture, health plan and benefits, which means they will provide personalized support. </p>
             <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses or domestic partners enrolled in a Northrop Grumman medical plan can also take advantage of this service. Navigation services will differ based on your medical plan.</p>
           </div>
-          <div className="w-full md:w-2/4">
+          <div className="w-full md:w-2/4 mb-6 md:mb-0">
             <StaticImage className="shadow-2xl" src="../images/whois-qh.jpg" />
           </div>
         </div>
@@ -163,14 +163,112 @@ const IndexPage = () => {
               </tr>
             </tbody>
           </table>
-          <div className="w-full md:w-2/4 m-auto"><p><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
+          <div className="md:hidden">
+            <div className="feature p-6 shadow-lg mb-10">
+              <div className="flex flex-wrap gap-2 justify-between items-center">
+                <div className="comp">
+                  <div className="pb-3 text-blue !font-bold text-lg">Anthem Members</div>
+                </div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Explain Northrop Grumman’s health and well-being benefits</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Recommend benefit solutions</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Provide contacts for specific benefits</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Review dental and vision coverage</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Manage the Well-being Incentive Program*</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Find in-network providers</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Contact providers to coordinate treatment</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Help navigate complicated medical situations and review treatment options</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Verify insurance coverage and get prior approval if needed</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Solve claims issues and explain your medical bills</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Discuss drug costs and coverage or concerns with prescriptions</div>
+              </div>
+          </div>
+
+          <div className="feature p-6 shadow-lg mb-10">
+              <div className="flex flex-wrap gap-2 justify-between items-center">
+                <div className="comp">
+                  <div className="pb-3 text-blue !font-bold text-lg">Non-Anthem Members</div>
+                </div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Explain Northrop Grumman’s health and well-being benefits</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Recommend benefit solutions</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Provide contacts for specific benefits</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Review dental and vision coverage</div>
+              </div>
+              <div className="flex border-t border-grey-light py-3 gap-2 items-center">
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue" /> 
+                </div>
+                <div className="text-sm">Manage the Well-being Incentive Program*</div>
+              </div>
+          </div>
+          
+        </div>
+        <div className="w-full md:w-2/4 m-auto"><p><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
         </div>
       </section>
       <section className="gutter top">
         <div className="wrapper">
           <h2>Frequently Asked Questions</h2>
-          <Accordion>
-            <AccordionItem header="What is Quantum Health?">
+          <Accordion className="accord" transition transitionTimeout={250}>
+            <AccordionItem header="What is Quantum Health?" initialEntered>
               <p>Quantum Health is an industry-leading healthcare navigation and care coordination company. Organizations hire Quantum Health to help their employees and family members navigate the cost and complexity of healthcare, while ensuring they get the most out of their benefits.</p>
             </AccordionItem>
             <AccordionItem header="Why is Northrop Grumman partnering with Quantum Health?">

@@ -5,32 +5,10 @@
 @tailwind utilities;
 
 .szh-accordion__item{
-    @apply border-b py-6;
+    @apply border-b py-6 text-grey;
     &:last-child{
         @apply border-none;
     }
-    & p {
-        max-width: 90ch;
-        &:last-child{
-            @apply mb-0;
-        }
-    }
-    & h3{
-        @apply hover:text-blue;
-        font-family: Kumbh Sans, sans;
-    }
-    & button{
-        @apply w-full flex gap-2;
-        font-family: Kumbh Sans, sans;
-        &:after{
-            @apply text-lg text-grey-md;
-            content: '\f078';
-            font-family: Font Awesome\ 6 Free;
-            font-weight: 900;
-            transition: all .2s;
-        }
-    }
-    
 }
 .szh-accordion__item--expanded h3{
     @apply text-blue pb-4;
@@ -41,7 +19,7 @@
 
 @layer components {
     body{
-        @apply text-grey;
+        @apply text-grey font-sans;
         overflow-x: hidden;
         font-variant-ligatures: none;
     }
@@ -59,11 +37,11 @@
         @apply text-2xl md:text-4xl
     }
     h3{
-        @apply text-xl md:text-2xl
+        @apply text-xl md:text-2xl font-bold
     }
-    h1, h2, h3 {
+    h1, h2 {
         @apply font-bold mb-6;
-        font-family: Kumbh Sans, sans;
+        font-family: "Kumbh Sans";
     }
     p{
         @apply text-lg mb-8;
@@ -80,6 +58,7 @@
             @apply pb-0;
         }
     }
+    
     .play {
         @apply absolute w-32 h-32 top-2/4 left-2/4 -mt-16 -ml-16 cursor-pointer z-10;
         & i {
@@ -106,14 +85,9 @@
         @apply bg-grey-light;
     }
     .modal-overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        @apply fixed top-0 bottom-0 left-0 right-0 flex;
         z-index: 9999;
         background-color: rgba(000, 000, 000, 80%);
-        display: flex;
         backdrop-filter: blur(16px);
     }
     
@@ -125,13 +99,8 @@
         position: relative;
         box-shadow: 0 5px 10px 0 rgb(0 0 0 / 60%);
         
-        &.video-m{
-            width: 80%;
-            aspect-ratio: auto 16/9;
-            background-color: #000;
-        }
         & .close {
-            @apply absolute top-0 cursor-pointer -right-10;
+            @apply absolute -top-10 md:top-0 cursor-pointer right-2 md:-right-10;
     
             & i {
                 @apply text-white text-4xl leading-none;
@@ -147,6 +116,38 @@
             height: 100%;
             border: none;
         }
+    }
+
+    .video-m{
+        @apply w-full md:w-4/5 bg-black;
+        aspect-ratio: auto 16/9;
+    }
+
+    .accord{
+        @apply relative;
+        & h3{
+            @apply text-grey text-left hover:text-blue;
+            & button{
+                @apply w-full flex gap-2 text-left;
+            }
+            & button:after{
+                @apply text-lg text-grey-md hidden md:block;
+                content: '\f078';
+                font-family: Font Awesome\ 6 Free;
+                font-weight: 900;
+                transition: all .2s;
+            }
+        }
+        & p {
+            max-width: 90ch;
+            &:last-child{
+                @apply mb-0;
+            }
+        }
+    }
+    .hero-bg{
+        @apply relative bg-none md:bg-cover bg-center bg-gray-900;
+        background-image: url('../images/22-2001-Stephanie-Vost-Hero.jpg');
     }
 
 }
