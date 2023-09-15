@@ -40,16 +40,18 @@ const IndexPage = () => {
           <div className="gutter w-full md:w-3/4 lg:w-2/4 text-white relative z-10">
           <h1>Your simplified, personalized healthcare experience.</h1>
           <p>Northrop Grumman is adding a new healthcare navigation and care coordination service, powered by Quantum Health, to your 2024 benefits package. This service will be available at no additional cost and will help you and your family confidently navigate your health benefits, as well as the cost and complexity of healthcare.</p>
-          <hr className="mb-8 opacity-25" />
-          <p><strong>Starting Jan. 1, 2024,</strong> Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Navigation services will differ based on your medical plan. </p>
           
           </div>
         </div>
         {/* <div className="relative md:absolute top-0 hero-bg">
         </div> */}
       </section>
-      <section className="gutter">
-        <div className="wrapper">
+      <section className="">
+        <div className="wrapper gutter sm mb-16 border-b border-gray-300">
+          <div className="md:w-2/4">
+            <h2>Starting Jan. 1, 2024</h2>
+          <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Navigation services will differ based on your medical plan. </p>
+          </div>
         <div class="flex flex-col md:flex-row gap-6 md:gap-12">
           <div className="w-full md:w-2/4 relative">
             <div className="relative">
@@ -62,7 +64,7 @@ const IndexPage = () => {
                 </div>
             </div> : ''}
             </div>
-            <h3 className="mt-6 text-center text-blue">Anthem Members</h3>
+            <h3 className="mt-6 text-center text-blue">If you’re enrolled in an Anthem medical plan</h3>
           </div>
           <div className="w-full md:w-2/4 relative">
             <div className="relative">
@@ -75,7 +77,7 @@ const IndexPage = () => {
                 </div>
             </div> : ''}
             </div>
-            <h3 className="mt-6 text-center text-blue">Non-Anthem Members</h3>
+            <h3 className="mt-6 text-center text-blue">If you’re <span className="text-orange">NOT</span> enrolled in an Anthem medical plan</h3>
           </div>
         </div>
 
@@ -86,78 +88,79 @@ const IndexPage = () => {
           <div className="w-full md:w-2/4">
             <h2>Quantum Health is your dedicated team of benefits experts. </h2>
             <p>Healthcare can be complex and confusing. With Quantum Health, you’ll have access to Care Coordinators – a team of nurses, claims specialists and benefits experts – who exclusively support Northrop Grumman employees and their families. Care Coordinators are trained on Northrop Grumman’s company culture, health plan and benefits, which means they will provide personalized support. </p>
-            <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses or domestic partners enrolled in a Northrop Grumman medical plan can also take advantage of this service. Navigation services will differ based on your medical plan.</p>
+            <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses or domestic partners enrolled in a Northrop Grumman medical plan can also take advantage of this service.</p>
           </div>
           <div className="w-full md:w-2/4 mb-6 md:mb-0">
-            <StaticImage className="shadow-2xl" src="../images/whois-qh.jpg" />
+            <StaticImage className="rounded-2xl shadow-2xl" src="../images/whois-qh.jpg" />
           </div>
         </div>
       </section>
-      <section className="gutter top">
+      <section className="gutter sm">
         <div className="wrapper">
+          <h2 className="md:w-2/4">Navigation services will differ based on your medical plan.</h2>
           <table className="hidden md:table text-left border-spacing-8 border-collapse w-full mb-12">
             <colgroup><col className="w-1/2" /><col className="w-1/4" /><col className="w-1/4" /></colgroup>
             
             <tbody className="comp">
               <tr>
-                <th className="pt-8 pb-4 font-bold text-xl">Support</th>
-                <th className="pt-8 pb-4 font-bold text-xl !text-blue text-center">Anthem Members</th>
-                <th className="pt-8 pb-4 font-bold text-xl !text-blue text-center">Non-Anthem Members</th>
+                <th className="pt-8 pb-4 font-bold text-xl"></th>
+                <th className="pt-8 pb-4 font-bold text-lg !text-blue text-center">Anthem medical plan</th>
+                <th className="pt-8 pb-4 font-bold text-lg !text-blue text-center">Medical plan other than Anthem</th>
               </tr>
             </tbody>
             <tbody className="th">
               <tr>
-                <th className="text-lg font-normal">Explain Northrop Grumman’s health and well-being benefits</th>
+                <th className="font-normal">Explain Northrop Grumman’s health and well-being benefits</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-check text-blue" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Recommend benefit solutions</th>
+                <th className="font-normal">Recommend benefit solutions</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-check text-blue" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Provide contacts for specific benefits</th>
+                <th className="font-normal">Provide contacts for specific benefits</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-check text-blue" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Review dental and vision coverage</th>
+                <th className="font-normal">Review dental and vision coverage</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-check text-blue" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Manage the Well-being Incentive Program*</th>
+                <th className="font-normal">Manage the Well-being Incentive Program*</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-check text-blue" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Find in-network providers</th>
+                <th className="font-normal">Find in-network providers</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Contact providers to coordinate treatment</th>
+                <th className="font-normal">Contact providers to coordinate treatment</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Help navigate complicated medical situations and review treatment options</th>
+                <th className="font-normal">Help navigate complicated medical situations and review treatment options</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Verify insurance coverage and get prior approval if needed</th>
+                <th className="font-normal">Verify insurance coverage and get prior approval if needed</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Solve claims issues and explain your medical bills</th>
+                <th className="font-normal">Solve claims issues and explain your medical bills</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
-                <th className="text-lg font-normal">Discuss drug costs and coverage or concerns with prescriptions</th>
+                <th className="font-normal">Discuss drug costs and coverage or concerns with prescriptions</th>
                 <td><i className="fa-solid fa-check text-blue" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
@@ -261,7 +264,7 @@ const IndexPage = () => {
           </div>
           
         </div>
-        <div className="w-full md:w-2/4 m-auto"><p><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
+        <div className="w-full md:w-2/4"><p className="text-sm"><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
         </div>
       </section>
       <section className="gutter top">
@@ -307,5 +310,5 @@ export const Head = () =>
 <Seo
 title="Quantum Health & Northrop Grumman"
 desc="With Quantum Health and Northrop Grumman we improve access to care, reduces disparities, and enhances the overall efficiency and effectiveness of healthcare systems."
-metaImage="..images/meta-ngc-qh.jpg"
+metaImage="https://adorable-truffle-42d431.netlify.app/static…ie-Vost-Hero-17ee0a3063c88828263d4932c59c2c55.jpg"
 />
