@@ -39,7 +39,7 @@ const IndexPage = () => {
         <div className="wrapper">
           <div className="gutter w-full md:w-3/4 lg:w-2/4 text-white relative z-10">
           <h1>Your simplified, personalized healthcare experience.</h1>
-          <p>Northrop Grumman is adding a new healthcare navigation and care coordination service, powered by Quantum Health, to your 2024 benefits package. This service will be available at no additional cost and will help you and your family confidently navigate your health benefits, as well as the cost and complexity of healthcare.</p>
+          <p>,In 2024, Northrop Grumman is adding a new healthcare navigation and care coordination service, powered by Quantum Health, to your benefits package. This service will be available at no additional cost and will help you and your family confidently navigate your health benefits, as well as the cost and complexity of healthcare.</p>
           
           </div>
         </div>
@@ -47,10 +47,10 @@ const IndexPage = () => {
         </div> */}
       </section>
       <section className="">
-        <div className="wrapper gutter sm mb-16 border-b border-gray-300">
+        <div className="wrapper gutter">
           <div className="md:w-2/4">
             <h2>Starting Jan. 1, 2024</h2>
-          <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Navigation services will differ based on your medical plan. </p>
+          <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses and domestic partners enrolled in a Northrop Grumman medical plan will also have access to this service. Navigation services will differ based on your medical plan. </p>
           </div>
         <div class="flex flex-col md:flex-row gap-6 md:gap-12">
           <div className="w-full md:w-2/4 relative">
@@ -83,19 +83,18 @@ const IndexPage = () => {
 
         </div>
       </section>
-      <section className="gutter sm top">
-        <div className="wrapper flex flex-col md:flex-row gap-4 md:gap-24">
+      <section className="gutter bot bg-gradient-to-b from-grey-light to-white">
+        <div className="wrapper flex flex-col items-center md:flex-row gap-4 md:gap-24">
           <div className="w-full md:w-2/4">
             <h2>Quantum Health is your dedicated team of benefits experts. </h2>
             <p>Healthcare can be complex and confusing. With Quantum Health, you’ll have access to Care Coordinators – a team of nurses, claims specialists and benefits experts – who exclusively support Northrop Grumman employees and their families. Care Coordinators are trained on Northrop Grumman’s company culture, health plan and benefits, which means they will provide personalized support. </p>
-            <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses or domestic partners enrolled in a Northrop Grumman medical plan can also take advantage of this service.</p>
           </div>
           <div className="w-full md:w-2/4 mb-6 md:mb-0">
             <StaticImage className="rounded-2xl shadow-2xl" src="../images/whois-qh.jpg" />
           </div>
         </div>
       </section>
-      <section className="gutter sm">
+      <section className="gutter bot">
         <div className="wrapper">
           <h2 className="md:w-2/4">Navigation services will differ based on your medical plan.</h2>
           <table className="hidden md:table text-left border-spacing-8 border-collapse w-full mb-12">
@@ -170,7 +169,7 @@ const IndexPage = () => {
             <div className="feature p-6 shadow-lg mb-10">
               <div className="flex flex-wrap gap-2 justify-between items-center">
                 <div className="comp">
-                  <div className="pb-3 text-blue !font-bold text-lg">Anthem Members</div>
+                  <div className="pb-3 text-blue !font-bold text-lg">Anthem medical plan</div>
                 </div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
@@ -233,7 +232,7 @@ const IndexPage = () => {
           <div className="feature p-6 shadow-lg mb-10">
               <div className="flex flex-wrap gap-2 justify-between items-center">
                 <div className="comp">
-                  <div className="pb-3 text-blue !font-bold text-lg">Non-Anthem Members</div>
+                  <div className="pb-3 text-blue !font-bold text-lg">Medical plan other than Anthem</div>
                 </div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
@@ -267,7 +266,7 @@ const IndexPage = () => {
         <div className="w-full md:w-2/4"><p className="text-sm"><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
         </div>
       </section>
-      <section className="gutter top">
+      <section className="gutter sm">
         <div className="wrapper">
           <h2>Frequently Asked Questions</h2>
           <Accordion className="accord" transition transitionTimeout={250}>
@@ -275,7 +274,10 @@ const IndexPage = () => {
               <p>Quantum Health is an industry-leading healthcare navigation and care coordination company. Organizations hire Quantum Health to help their employees and family members navigate the cost and complexity of healthcare, while ensuring they get the most out of their benefits.</p>
             </AccordionItem>
             <AccordionItem header="Why is Northrop Grumman partnering with Quantum Health?">
-              <p>Northrop Grumman is committed to helping you thrive, both at work and in life. We continuously seek out a wide array of offerings designed to meet your needs at all life stages and across the spectrum of life experiences. This partnership will simplify, personalize and further enhance your healthcare experience. In addition to helping you and your family understand all the benefits Northrop Grumman offers, Quantum Health will help you confidently navigate health decisions, costs and coverage.</p>
+              <p>Northrop Grumman is committed to helping you thrive, both at work and in life. We provide a diverse range of offerings designed to meet your needs at all life stages and across the spectrum of life experiences. Our partnership with Quantum Health will simplify, personalize and improve your healthcare experience. In addition to helping you and your family understand all the benefits Northrop Grumman offers, Quantum Health will help you confidently navigate health decisions, costs and coverage.</p>
+            </AccordionItem>
+            <AccordionItem header="Can all employees access Quantum Health?">
+              <p>Yes, Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses and domestic partners enrolled in a Northrop Grumman medical plan will also have access to this service. Navigation services will differ based on your medical plan.</p>
             </AccordionItem>
             <AccordionItem header="Will Quantum Health replace my current insurance provider?">
               <p>No, Quantum Health is an independent healthcare navigation and care coordination service, which means they aren’t affiliated with your insurance company (Anthem, Kaiser, etc.) or pharmacy benefits (CVS Caremark). Insurance providers aren’t changing.</p>
@@ -290,7 +292,7 @@ const IndexPage = () => {
               <p>Care Coordinators will be able to answer your healthcare and benefits questions. Whether you need to find a provider, have a question about a complex medical bill, can’t remember who administers your vision plan, want to understand what’s covered or just need help preparing for an upcoming doctor’s visit – no question is too big or small. Check out the videos above to learn how Care Coordinators will support Anthem members vs. non-Anthem members. </p>
             </AccordionItem>
             <AccordionItem header="When can I start using Quantum Health’s services?">
-              <p>On Jan. 1, 2024, visit this page to create a Quantum Health account and learn about the services available to you and your family. After Jan. 1, you can contact Quantum Health anytime through your online account, the Quantum Health app or by calling (800) 894-4194 during business hours and selecting option 1 when prompted. </p>
+              <p>Starting Jan. 1, 2024, you can visit this page to create a Quantum Health account and learn about the services available to you and your family. As New Year’s Day is an observed holiday, you can contact Quantum Health starting Jan. 2, 2024, through your online account, the Quantum Health app or by calling (800) 894-4194 during business hours and selecting option 1 when prompted.</p>
             </AccordionItem>
           </Accordion>
         </div>
