@@ -39,7 +39,7 @@ const IndexPage = () => {
         <div className="wrapper">
           <div className="gutter w-full md:w-3/4 lg:w-2/4 text-white relative z-10">
           <h1>Your simplified, personalized healthcare experience.</h1>
-          <p>,In 2024, Northrop Grumman is adding a new healthcare navigation and care coordination service, powered by Quantum Health, to your benefits package. This service will be available at no additional cost and will help you and your family confidently navigate your health benefits, as well as the cost and complexity of healthcare.</p>
+          <p>In 2024, Northrop Grumman is adding a new healthcare navigation and care coordination service, powered by Quantum Health, to your benefits package. This service will be available at no additional cost and will help you and your family confidently navigate your health benefits, as well as the cost and complexity of healthcare.</p>
           
           </div>
         </div>
