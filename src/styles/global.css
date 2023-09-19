@@ -14,7 +14,7 @@
     }
 }
 .szh-accordion__item--expanded h3{
-    @apply text-green pb-4;
+    @apply text-blue pb-4;
     & button:after{
         transform: rotate(180deg);
     }
@@ -40,7 +40,7 @@
     h2{
         @apply text-2xl md:text-4xl;
         & strong{
-            @apply text-green
+            @apply text-blue;
         }
     }
     h3{
@@ -134,7 +134,8 @@
     .accord{
         @apply relative;
         & h3{
-            @apply text-grey text-left hover:text-green;
+            @apply text-grey text-left hover:text-blue;
+            font-family: "Roboto";
             & button{
                 @apply w-full flex gap-2 text-left;
             }
