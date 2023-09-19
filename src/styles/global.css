@@ -138,6 +138,7 @@
             font-family: "Roboto";
             & button{
                 @apply w-full flex gap-2 text-left;
+                font-family: "Roboto";
             }
             & button:after{
                 @apply text-lg text-grey-md hidden md:block;
