@@ -44,7 +44,8 @@
         }
     }
     h3{
-        @apply text-xl md:text-2xl font-bold
+        @apply text-xl md:text-2xl font-bold;
+        font-family: "Roboto";
     }
     h1, h2 {
         @apply font-bold mb-6;
