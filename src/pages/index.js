@@ -64,7 +64,7 @@ const IndexPage = () => {
         <div className="wrapper gutter">
           <div className="md:w-2/4">
             <h2>Starting <strong>Jan. 1, 2024</strong></h2>
-          <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses and domestic partners enrolled in a Northrop Grumman medical plan will also have access to this service. Navigation services will differ based on your medical plan. </p>
+          <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses and domestic partners enrolled in a Northrop Grumman medical plan will also have access to this service.</p>
           </div>
         <div class="flex flex-col md:flex-row gap-6 md:gap-12">
           <div className="w-full md:w-2/4 relative md:p-6 md:rounded-2xl md:shadow-xl">
@@ -97,18 +97,7 @@ const IndexPage = () => {
 
         </div>
       </section>
-      <section className="gutter bot bg-gradient-to-b from-grey-light to-white">
-        <div className="wrapper flex flex-col items-center md:flex-row gap-4 md:gap-24">
-          <div className="w-full md:w-2/4">
-            <h2>Quantum Health is <strong>your dedicated team of benefits experts.</strong> </h2>
-            <p>Healthcare can be complex and confusing. With Quantum Health, you’ll have access to Care Coordinators – a team of nurses, claims specialists and benefits experts – who exclusively support Northrop Grumman employees and their families. Care Coordinators are trained on Northrop Grumman’s company culture, health plan and benefits, which means they will provide personalized support. </p>
-          </div>
-          <div className="w-full md:w-2/4 mb-6 md:mb-0">
-            <StaticImage className="rounded-2xl shadow-2xl" src="../images/whois-qh.jpg" />
-          </div>
-        </div>
-      </section>
-      <section className="gutter bot">
+      <section className="gutter top">
         <div className="wrapper">
           <h2 className="md:w-2/4">Navigation services will differ based on your medical plan.</h2>
           <table className="hidden md:table text-left border-spacing-8 border-collapse w-full mb-12">
@@ -280,6 +269,18 @@ const IndexPage = () => {
         <div className="w-full md:w-2/4"><p className="text-sm"><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
         </div>
       </section>
+      <section className="gutter bg-gradient-to-b from-grey-light to-white">
+        <div className="wrapper flex flex-col items-center md:flex-row gap-4 md:gap-24">
+          <div className="w-full md:w-2/4">
+            <h2>Quantum Health is <strong>your dedicated team of benefits experts.</strong> </h2>
+            <p className="mb-0">Healthcare can be complex and confusing. With Quantum Health, you’ll have access to Care Coordinators – a team of nurses, claims specialists and benefits experts – who exclusively support Northrop Grumman employees and their families. Care Coordinators are trained on Northrop Grumman’s company culture, health plan and benefits, which means they will provide personalized support. </p>
+          </div>
+          <div className="w-full md:w-2/4 mb-6 md:mb-0">
+            <StaticImage className="rounded-2xl shadow-2xl" src="../images/whois-qh.jpg" />
+          </div>
+        </div>
+      </section>
+      
       <section className="gutter sm">
         <div className="wrapper">
           <h2>Frequently Asked Questions</h2>
