@@ -53,7 +53,7 @@ const IndexPage = () => {
         <div className="wrapper">
           <div className="gutter w-full md:w-3/4 lg:w-2/4 text-white relative z-10">
           <h1>Your simplified, personalized healthcare experience.</h1>
-          <p>In 2024, Northrop Grumman is adding a new healthcare navigation and care coordination service, powered by Quantum Health, to your benefits package. This service will be available at no additional cost and will help you and your family confidently navigate your health benefits, as well as the cost and complexity of healthcare.</p>
+          <p className="mb-0">In 2024, Northrop Grumman is adding a new healthcare navigation and care coordination service, powered by Quantum Health, to your benefits package. This service, powered by Quantum Health, will be available at no additional cost and will help you and your family confidently navigate your health benefits and the cost and complexity of healthcare.</p>
           
           </div>
         </div>
@@ -62,12 +62,12 @@ const IndexPage = () => {
       </section>
       <section className="">
         <div className="wrapper gutter">
-          <div className="md:w-2/4">
+          <div className="m-auto text-center md:w-2/4">
             <h2>Starting <strong>Jan. 1, 2024</strong></h2>
           <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses and domestic partners enrolled in a Northrop Grumman medical plan will also have access to this service.</p>
           </div>
         <div class="flex flex-col md:flex-row gap-6 md:gap-12">
-          <div className="w-full md:w-2/4 relative md:p-6 md:rounded-2xl md:shadow-xl">
+          <div className="w-full md:w-2/4 relative bg-blue text-white md:p-6 md:rounded-2xl md:shadow-xl">
             <div className="relative">
               <div className="play" onClick={toggleOpen}><i className="fa-regular fa-circle-play" /></div>
               <StaticImage className="shadow-2xl md:shadow-none rounded-xl" src="../images/video1.jpg" />
@@ -80,7 +80,7 @@ const IndexPage = () => {
             </div>
             <h3 className="mt-6 text-center ">If you’re enrolled in an Anthem medical plan</h3>
           </div>
-          <div className="w-full md:w-2/4 relative md:p-6 md:rounded-2xl md:shadow-xl">
+          <div className="w-full md:w-2/4 relative bg-blue text-white md:p-6 md:rounded-2xl md:shadow-xl">
             <div className="relative">
               <div className="play" onClick={toggleOpen2}><i className="fa-regular fa-circle-play" /></div>
               <StaticImage className="shadow-2xl md:shadow-none rounded-xl" src="../images/video2.jpg" />
@@ -91,23 +91,23 @@ const IndexPage = () => {
                 </div>
             </div> : ''}
             </div>
-            <h3 className="mt-6 text-center ">If you’re <span className="text-red-700">NOT</span> enrolled in an Anthem medical plan</h3>
+            <h3 className="mt-6 text-center ">If you’re <span className="text-red-200">NOT</span> enrolled in an Anthem medical plan</h3>
           </div>
         </div>
 
         </div>
       </section>
-      <section className="gutter top">
+      <section className="gutter top" id="services">
         <div className="wrapper">
-          <h2 className="md:w-2/4">Navigation services will differ based on your medical plan.</h2>
+          <h2 className="md:w-2/4 text-center m-auto mb-8">Navigation services will differ based on your medical plan.</h2>
           <table className="hidden md:table text-left border-spacing-8 border-collapse w-full mb-12">
             <colgroup><col className="w-1/2" /><col className="w-1/4" /><col className="w-1/4" /></colgroup>
             
             <tbody className="comp">
               <tr>
-                <th className="pt-8 pb-4 font-bold text-xl"></th>
-                <th className="pt-8 pb-4 font-bold text-lg !text-purple text-center">Anthem medical plan</th>
-                <th className="pt-8 pb-4 font-bold text-lg !text-teal text-center">Medical plan other than Anthem</th>
+                <th className="pt-8 pb-4 font-bold text-xl">Navigation services</th>
+                <th className="pt-8 pb-4 font-bold text-lg !text-purple text-center">Anthem Medical Plan</th>
+                <th className="pt-8 pb-4 font-bold text-lg !text-teal text-center">Non-Anthem Medical Plan</th>
               </tr>
             </tbody>
             <tbody className="th">
@@ -266,7 +266,7 @@ const IndexPage = () => {
           </div>
           
         </div>
-        <div className="w-full md:w-2/4"><p className="text-sm"><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
+        <div><p className="text-sm"><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
         </div>
       </section>
       <section className="gutter bg-gradient-to-b from-grey-light to-white">
@@ -283,7 +283,7 @@ const IndexPage = () => {
       
       <section className="gutter sm">
         <div className="wrapper">
-          <h2>Frequently Asked Questions</h2>
+          <h2 className="text-blue">Frequently Asked Questions</h2>
           <Accordion className="accord" transition transitionTimeout={250}>
             <AccordionItem header="What is Quantum Health?" initialEntered>
               <p>Quantum Health is an industry-leading healthcare navigation and care coordination company. Organizations hire Quantum Health to help their employees and family members navigate the cost and complexity of healthcare, while ensuring they get the most out of their benefits.</p>
@@ -292,10 +292,10 @@ const IndexPage = () => {
               <p>Northrop Grumman is committed to helping you thrive, both at work and in life. We provide a diverse range of offerings designed to meet your needs at all life stages and across the spectrum of life experiences. Our partnership with Quantum Health will simplify, personalize and improve your healthcare experience. In addition to helping you and your family understand all the benefits Northrop Grumman offers, Quantum Health will help you confidently navigate health decisions, costs and coverage.</p>
             </AccordionItem>
             <AccordionItem header="Can all employees access Quantum Health?">
-              <p>Yes, Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses and domestic partners enrolled in a Northrop Grumman medical plan will also have access to this service. Navigation services will differ based on your medical plan.</p>
+              <p>Yes, Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses and domestic partners enrolled in a Northrop Grumman medical plan will also have access to this service. Navigation services will differ based on your medical plan. <a className="text-blue underline underline-offset-2" href="#services">View the table above for more information.</a></p>
             </AccordionItem>
             <AccordionItem header="Will Quantum Health replace my current insurance provider?">
-              <p>No, Quantum Health is an independent healthcare navigation and care coordination service, which means they aren’t affiliated with your insurance company (Anthem, Kaiser, etc.) or pharmacy benefits (CVS Caremark). Insurance providers aren’t changing.</p>
+              <p>No, Quantum Health is an independent healthcare navigation and care coordination service, which means they aren’t affiliated with your insurance company (Anthem, Kaiser, etc.) or pharmacy benefits manager (CVS Caremark). Insurance providers aren’t changing.</p>
             </AccordionItem>
             <AccordionItem header="Will Quantum Health cost me anything?">
               <p>No, at Northrop Grumman, we believe investing in our employees’ well-being is investing in our future. This service will be added to your benefits package at no additional cost.  </p>
