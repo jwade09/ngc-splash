@@ -67,10 +67,10 @@ const IndexPage = () => {
           <p>Quantum Health will be available to all benefits-eligible U.S. employees, even if you’re not enrolled in a Northrop Grumman medical plan. Spouses and domestic partners enrolled in a Northrop Grumman medical plan will also have access to this service.</p>
           </div>
         <div class="flex flex-col md:flex-row gap-6 md:gap-12">
-          <div className="w-full md:w-2/4 relative bg-blue text-white md:p-6 md:rounded-2xl md:shadow-xl">
+          <div className="w-full md:w-2/4 relative bg-blue text-white pb-6 md:p-6 rounded-2xl md:shadow-xl">
             <div className="relative">
               <div className="play" onClick={toggleOpen}><i className="fa-regular fa-circle-play" /></div>
-              <StaticImage className="shadow-2xl md:shadow-none rounded-xl" src="../images/video1.jpg" />
+              <StaticImage className="shadow-2xl md:shadow-none rounded-t-xl md:rounded-xl" src="../images/video1.jpg" />
               {isOpen ? <div className="modal-overlay items-center justify-center" onClick={toggleClose}>
                 <div className="modal video-m">
                     <div className="close"><i class="fa-solid fa-xmark" /></div>
@@ -80,10 +80,10 @@ const IndexPage = () => {
             </div>
             <h3 className="mt-6 text-center ">If you’re enrolled in an Anthem medical plan</h3>
           </div>
-          <div className="w-full md:w-2/4 relative bg-blue text-white md:p-6 md:rounded-2xl md:shadow-xl">
+          <div className="w-full md:w-2/4 relative bg-blue text-white pb-6 md:p-6 rounded-2xl shadow-xl">
             <div className="relative">
               <div className="play" onClick={toggleOpen2}><i className="fa-regular fa-circle-play" /></div>
-              <StaticImage className="shadow-2xl md:shadow-none rounded-xl" src="../images/video2.jpg" />
+              <StaticImage className="shadow-2xl md:shadow-none rounded-t-xl md:rounded-xl" src="../images/video2.jpg" />
               {isOpen2 ? <div className="modal-overlay items-center justify-center" onClick={toggleClose2}>
                 <div className="modal video-m">
                     <div className="close"><i class="fa-solid fa-xmark" /></div>
@@ -99,8 +99,8 @@ const IndexPage = () => {
       </section>
       <section className="gutter top" id="services">
         <div className="wrapper">
-          <h2 className="md:w-2/4 text-center m-auto mb-8">Navigation services will differ based on your medical plan.</h2>
-          <table className="hidden md:table text-left border-spacing-8 border-collapse w-full mb-12">
+          <h2 className="md:w-2/4 text-center m-auto mb-12">Navigation services will differ based on your medical plan.</h2>
+          <table className="hidden md:table text-left border-spacing-8 border-collapse w-full m-auto md:w-4/5 mb-12">
             <colgroup><col className="w-1/2" /><col className="w-1/4" /><col className="w-1/4" /></colgroup>
             
             <tbody className="comp">
@@ -172,7 +172,7 @@ const IndexPage = () => {
             <div className="feature p-6 shadow-lg mb-10">
               <div className="flex flex-wrap gap-2 justify-between items-center">
                 <div className="comp">
-                  <div className="pb-3 text-purple !font-bold text-lg">Anthem medical plan</div>
+                  <div className="pb-3 text-purple !font-bold text-lg">Anthem Medical Plan</div>
                 </div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
@@ -235,7 +235,7 @@ const IndexPage = () => {
           <div className="feature p-6 shadow-lg mb-10">
               <div className="flex flex-wrap gap-2 justify-between items-center">
                 <div className="comp">
-                  <div className="pb-3 text-teal !font-bold text-lg">Medical plan other than Anthem</div>
+                  <div className="pb-3 text-teal !font-bold text-lg">Non-Anthem Medical Plan</div>
                 </div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
@@ -266,7 +266,7 @@ const IndexPage = () => {
           </div>
           
         </div>
-        <div><p className="text-sm"><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
+        <div className="w-full md:w-4/5 m-auto"><p className="text-sm"><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
         </div>
       </section>
       <section className="gutter bg-gradient-to-b from-grey-light to-white">

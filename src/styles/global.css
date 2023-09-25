@@ -87,9 +87,16 @@
             content: "";
         }
         & td{
-            @apply text-center p-2 text-grey text-xl;
+            @apply text-center p-3 text-grey text-xl;
+            
         }
-
+        & th{
+            @apply py-2 px-4;
+            
+        }
+        &:nth-child(even){
+            @apply bg-slate-50;
+        }
     }
     .th tr:after{
         @apply bg-grey-light;
@@ -158,7 +165,7 @@
         }
     }
     .hero-bg{
-        @apply relative bg-none md:bg-cover bg-center bg-gray-900;
+        @apply relative bg-none md:bg-cover bg-right-top md:bg-center bg-gray-900;
         background-image: url('../images/ngc-Hero.jpg');
     }
 
