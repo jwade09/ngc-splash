@@ -23,7 +23,7 @@
 
 @layer components {
     body{
-        @apply text-grey;
+        @apply text-grey text-lg;
         overflow-x: hidden;
         font-variant-ligatures: none;
         font-family: "Fira Sans";
@@ -40,21 +40,18 @@
     }
     h2{
         @apply text-2xl md:text-4xl;
-        & strong{
-            @apply text-blue;
-        }
     }
     h3{
         @apply text-xl md:text-2xl font-bold;
         font-family: "Roboto";
     }
     h1, h2 {
-        @apply font-bold mb-6;
+        @apply font-bold mb-6 text-blue;
         font-family: "Roboto";
         
     }
     p{
-        @apply text-base mb-8;
+        @apply mb-8;
     }
     .gutter{
         @apply py-14 md:py-28;
@@ -157,12 +154,9 @@
                 transition: all .2s;
             }
         }
-        & p {
-            max-width: 90ch;
-            &:last-child{
+        & p:last-child{
                 @apply mb-0;
             }
-        }
     }
     .hero-bg{
         @apply relative bg-none md:bg-cover bg-right-top md:bg-center bg-gray-900;
