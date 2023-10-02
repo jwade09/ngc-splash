@@ -69,7 +69,7 @@ const IndexPage = () => {
           <div className="w-full md:w-2/4 text-grey relative z-10">
             
             <h1>Your simplified, personalized healthcare experience.</h1>
-            <p className="mb-0">In 2024, Northrop Grumman is adding a new healthcare navigation and care coordination service to your benefits package. This service will be available at no additional cost and will help you and your family confidently navigate your health benefits and the cost and complexity of healthcare.</p>
+            <p className="mb-0">In 2024, Northrop Grumman is adding a new healthcare navigation and care coordination service, powered by Quantum Health, to your benefits package. This service will be available at no additional cost and will help you and your family confidently navigate your health benefits and the cost and complexity of healthcare.</p>
           </div>
           <div className="w-full md:w-2/4 text-grey relative z-10">
             <StaticImage src="../images/ngc-Hero-2.jpg" className="rounded-2xl shadow-2xl" />
