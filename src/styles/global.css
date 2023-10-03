@@ -88,7 +88,7 @@
             
         }
         & th{
-            @apply py-2 px-4;
+            @apply py-2 px-4 text-base;
             
         }
         &:nth-child(even){
@@ -159,7 +159,7 @@
             }
     }
     .hero-bg{
-        @apply relative bg-none md:bg-cover bg-right-top md:bg-center bg-gray-900;
+        @apply relative bg-none md:bg-cover bg-top md:bg-center bg-gray-900 pt-32 pb-24;
         background-image: url('../images/ngc-Hero.jpg');
     }
 
