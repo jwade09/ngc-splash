@@ -159,7 +159,7 @@
             }
     }
     .hero-bg{
-        @apply relative bg-none md:bg-cover bg-top md:bg-center bg-gray-900 pt-32 pb-24;
+        @apply relative bg-none md:bg-cover bg-opacity-0 md:bg-opacity-100 bg-top bg-gray-900 ;
         background-image: url('../images/ngc-Hero.jpg');
     }
 

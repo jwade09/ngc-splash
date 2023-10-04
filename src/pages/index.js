@@ -74,7 +74,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section> */}
-      <section className="bg-gradient-to-b from-grey-light to-white">
+      <section className="bg-gradient-to-b from-grey-light to-white" id="videos">
         <div className="wrapper gutter sm">
           <div className="m-auto text-center md:w-2/4">
             <h2>Starting <strong>Jan. 1, 2024</strong></h2>
@@ -111,141 +111,143 @@ const IndexPage = () => {
 
         </div>
       </section>
-      <section className="gutter top" id="services">
+      <section className="gutter sm top" id="services">
         <div className="wrapper">
           <h2 className="md:w-2/4 text-center m-auto mb-12">Navigation services will differ based on your medical plan.</h2>
+          <div className="relative">
           <table className="hidden md:table text-left border-spacing-8 border-collapse w-full m-auto md:w-4/5 mb-12">
             <colgroup><col className="w-1/2" /><col className="w-1/4" /><col className="w-1/4" /></colgroup>
             
             <tbody className="comp">
               <tr>
                 <th className="pt-8 pb-4 font-bold text-xl">Navigation services</th>
-                <th className="pt-8 pb-4 font-bold text-lg !text-orange text-center">Anthem Medical Plan</th>
-                <th className="pt-8 pb-4 font-bold text-lg !text-blue text-center">Non-Anthem Medical Plan</th>
+                <th className="pt-8 pb-4 font-bold text-lg !text-blue-light text-center">Anthem Medical Plan</th>
+                <th className="pt-8 pb-4 font-bold text-lg !text-purple text-center">Non-Anthem Medical Plan</th>
               </tr>
             </tbody>
             <tbody className="th">
               <tr>
                 <th className="font-normal">Explain Northrop Grumman’s health and well-being benefits</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
-                <td><i className="fa-solid fa-check text-blue" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
+                <td><i className="fa-solid fa-check text-purple" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Recommend benefit solutions</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
-                <td><i className="fa-solid fa-check text-blue" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
+                <td><i className="fa-solid fa-check text-purple" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Provide contacts for specific benefits</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
-                <td><i className="fa-solid fa-check text-blue" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
+                <td><i className="fa-solid fa-check text-purple" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Review dental and vision coverage</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
-                <td><i className="fa-solid fa-check text-blue" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
+                <td><i className="fa-solid fa-check text-purple" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Manage the Well-being Incentive Program*</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
-                <td><i className="fa-solid fa-check text-blue" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
+                <td><i className="fa-solid fa-check text-purple" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Find in-network providers</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Contact providers to coordinate treatment</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Help navigate complicated medical situations and review treatment options</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Verify insurance coverage and get prior approval if needed</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Solve claims issues and explain your medical bills</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
                 <th className="font-normal">Discuss drug costs and coverage or concerns with prescriptions</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
               <tr>
                 <th className="font-normal">File appeals of medical claim determinations</th>
-                <td><i className="fa-solid fa-check text-orange" /></td>
+                <td><i className="fa-solid fa-check text-blue-light" /></td>
                 <td><i className="fa-solid fa-minus text-grey-md" /></td>
               </tr>
             </tbody>
           </table>
+          </div>
           <div className="md:hidden">
             <div className="feature p-6 shadow-lg mb-10">
               <div className="flex flex-wrap gap-2 justify-between items-center">
                 <div className="comp">
-                  <div className="pb-3 text-orange !font-bold text-lg">Anthem Medical Plan</div>
+                  <div className="pb-3 text-blue-light !font-bold text-lg">Anthem Medical Plan</div>
                 </div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Explain Northrop Grumman’s health and well-being benefits</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Recommend benefit solutions</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Provide contacts for specific benefits</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Review dental and vision coverage</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Manage the Well-being Incentive Program*</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Find in-network providers</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Contact providers to coordinate treatment</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Help navigate complicated medical situations and review treatment options</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Verify insurance coverage and get prior approval if needed</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Solve claims issues and explain your medical bills</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Discuss drug costs and coverage or concerns with prescriptions</div>
               </div>
@@ -254,41 +256,41 @@ const IndexPage = () => {
           <div className="feature p-6 shadow-lg mb-10">
               <div className="flex flex-wrap gap-2 justify-between items-center">
                 <div className="comp">
-                  <div className="pb-3 text-orange !font-bold text-lg">Non-Anthem Medical Plan</div>
+                  <div className="pb-3 text-blue-light !font-bold text-lg">Non-Anthem Medical Plan</div>
                 </div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Explain Northrop Grumman’s health and well-being benefits</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Recommend benefit solutions</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Provide contacts for specific benefits</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Review dental and vision coverage</div>
               </div>
               <div className="flex border-t border-grey-light py-3 gap-2 items-center">
-                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-orange" /> 
+                <div className="flex self-start"><i className="text-xl fa-solid fa-check mr-4 text-blue-light" /> 
                 </div>
                 <div className="text-sm">Manage the Well-being Incentive Program*</div>
               </div>
           </div>
           
         </div>
-        <div className="w-full md:w-4/5 m-auto"><p className="text-sm"><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
+        <div className="w-full md:w-4/5 m-auto"><p className="text-sm mb-0"><em>*Participants in the HMSA, Kaiser Hawaii and Tricare Supplement plans aren’t eligible for the Well-being Incentive Program. Baltimore and Sunnyvale-represented employees are eligible for the Annual Physical Incentive.</em></p></div>
         </div>
       </section>
-      <section className="gutter bg-gradient-to-b from-grey-light to-white">
+      <section className="gutter sm bg-gradient-to-b from-grey-light to-white">
         <div className="wrapper flex flex-col items-center md:flex-row gap-4 md:gap-24">
           <div className="w-full md:w-2/4">
             <h2>Quantum Health is <strong>your dedicated team of benefits experts.</strong> </h2>
@@ -323,7 +325,7 @@ const IndexPage = () => {
               <p>Care Coordinators are your personal team of nurses, benefits experts and claims specialists who will work with you and your providers to make your care simpler and more affordable. Care Coordinators are trained on Northrop Grumman’s company culture, health plan and benefits, which means they will provide personalized support.</p>
             </AccordionItem>
             <AccordionItem header="What will Care Coordinators help with?">
-              <p>Care Coordinators will be able to answer your healthcare and benefits questions. Whether you need to find a provider, have a question about a complex medical bill, can’t remember who administers your vision plan, want to understand what’s covered or just need help preparing for an upcoming doctor’s visit – no question is too big or small. Check out the videos above to learn how Care Coordinators will support Anthem members vs. non-Anthem members. </p>
+              <p>Care Coordinators will be able to answer your healthcare and benefits questions. Whether you need to find a provider, have a question about a complex medical bill, can’t remember who administers your vision plan, want to understand what’s covered or just need help preparing for an upcoming doctor’s visit – no question is too big or small. <a className="text-blue underline" href="#videos">Check out the videos</a> above to learn how Care Coordinators will support employees enrolled in an Anthem medical plan vs. a non-Anthem medical plan. </p>
             </AccordionItem>
             <AccordionItem header="When can I start using Quantum Health’s services?">
               <p>Starting Jan. 1, 2024, you can visit this page to create a Quantum Health account and learn about the services available to you and your family. As New Year’s Day is an observed holiday, you can contact Quantum Health starting Jan. 2, 2024, through your online account, the Quantum Health app or by calling (800) 894-4194 during business hours and selecting option 1 when prompted.</p>
