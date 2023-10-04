@@ -88,7 +88,7 @@ const IndexPage = () => {
               {isOpen ? <div className="modal-overlay items-center justify-center" onClick={toggleClose}>
                 <div className="modal video-m">
                     <div className="close"><i class="fa-solid fa-xmark" /></div>
-                    <iframe src="https://player.vimeo.com/video/827765423?autoplay=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Why did Portico choose Quantum Health?"></iframe>
+                    <iframe allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/6pk2porekc?autoplay=1"></iframe>
                 </div>
             </div> : ''}
             </div>
@@ -101,7 +101,7 @@ const IndexPage = () => {
               {isOpen2 ? <div className="modal-overlay items-center justify-center" onClick={toggleClose2}>
                 <div className="modal video-m">
                     <div className="close"><i class="fa-solid fa-xmark" /></div>
-                    <iframe src="https://player.vimeo.com/video/831679842?autoplay=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Why did Portico choose Quantum Health?"></iframe>
+                    <iframe allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/16258o0l9f?autoplay=1"></iframe>
                 </div>
             </div> : ''}
             </div>
